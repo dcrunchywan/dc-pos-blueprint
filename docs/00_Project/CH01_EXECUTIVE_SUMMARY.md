@@ -274,3 +274,68 @@ Daftar fitur tersebut meliputi:
 - Modifier Produk yang kompleks.
 
 Keputusan untuk menunda fitur-fitur tersebut bertujuan menjaga aplikasi tetap sederhana, cepat, dan mudah digunakan pada tahap awal implementasi.
+
+---
+
+## 7. Kriteria Keberhasilan (Success Criteria)
+
+Blueprint dan implementasi dianggap berhasil apabila memenuhi kriteria berikut.
+
+### Operasional
+
+- Kasir dapat menyelesaikan transaksi dengan cepat dan konsisten.
+- Tidak ada transaksi yang hilang meskipun koneksi internet terputus.
+- Browser dapat direfresh tanpa kehilangan transaksi yang belum tersinkronisasi.
+- Kesalahan input kasir dapat diminimalkan.
+
+### Owner
+
+- Dashboard menampilkan data yang akurat.
+- Rekonsiliasi QRIS sesuai dengan mutasi rekening.
+- Riwayat perubahan harga dapat ditelusuri.
+- Seluruh aktivitas penting tercatat pada Audit Log.
+
+### Teknis
+
+- Sistem mudah dikembangkan.
+- Struktur database tetap konsisten.
+- Business Rule tidak diduplikasi.
+- Dokumentasi selalu diperbarui sebelum implementasi fitur baru.
+
+---
+
+## 8. Stakeholder
+
+Pihak yang terlibat dalam pengembangan maupun penggunaan sistem.
+
+### Owner
+
+Bertanggung jawab terhadap pengambilan keputusan bisnis, konfigurasi sistem, laporan, serta persetujuan perubahan fitur.
+
+### Kasir
+
+Menggunakan aplikasi untuk melayani transaksi pelanggan, melakukan operasional dapur, serta mencatat aktivitas harian.
+
+### Developer
+
+Mengimplementasikan sistem sesuai Blueprint dan tidak mengubah Business Rule tanpa persetujuan.
+
+### Artificial Intelligence (AI)
+
+AI digunakan sebagai asisten pengembangan, dokumentasi, review kode, dan pembuatan implementasi berdasarkan Blueprint yang telah disetujui.
+
+---
+
+## 9. Batasan Proyek (Constraints)
+
+Untuk menjaga ruang lingkup proyek tetap terkendali, beberapa batasan berikut ditetapkan.
+
+- Prioritas utama adalah kebutuhan operasional toko saat ini.
+- Sistem dirancang untuk satu outlet terlebih dahulu.
+- Sistem mendukung satu shift operasional pada tahap awal.
+- Seluruh transaksi menggunakan satu QRIS yang sama.
+- Printer struk tidak termasuk dalam MVP.
+- Membership belum diimplementasikan.
+- Multi Outlet dipersiapkan pada level arsitektur, namun belum diaktifkan.
+
+Perubahan terhadap batasan proyek hanya dapat dilakukan melalui proses RFC (Request For Change).
