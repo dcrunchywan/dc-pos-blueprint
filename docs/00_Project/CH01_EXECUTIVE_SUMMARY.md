@@ -191,3 +191,86 @@ Target minimum:
 - Setiap modul berdiri sendiri.
 - Business Rule tidak boleh diduplikasi.
 - Dokumentasi menjadi acuan utama implementasi.
+
+---
+
+## 5. Ruang Lingkup MVP (Minimum Viable Product)
+
+Versi pertama D'CrunchyWan POS v3 difokuskan untuk memenuhi seluruh kebutuhan operasional toko saat ini tanpa menambahkan kompleksitas yang belum dibutuhkan.
+
+Fitur yang termasuk dalam MVP adalah:
+
+### Operasional Kasir
+
+- Login menggunakan PIN.
+- Pencarian produk.
+- Kategori produk.
+- Keranjang belanja.
+- Checkout.
+- Quick Cash.
+- Popup Keypad.
+- Digital Receipt.
+
+### Metode Pembayaran
+
+- Tunai.
+- QRIS.
+- Transfer.
+
+### Dapur
+
+- Input Ayam Supplier.
+- Input Goreng Ayam.
+- Input Ayam Waste.
+- Input Minyak.
+
+Dashboard dapur harus menampilkan kondisi stok operasional secara realtime.
+
+### Keuangan
+
+- Kas Awal.
+- Pengeluaran.
+- Tarik Tunai QRIS.
+- Setor Owner.
+- Mutasi Kas.
+
+### Dashboard Owner
+
+- Laporan Harian.
+- Laporan Bulanan.
+- Laporan Tahunan.
+- Grafik Penjualan.
+- Rekonsiliasi QRIS.
+- Riwayat Pengeluaran.
+- Riwayat Perubahan Harga.
+
+### Master Data
+
+- Produk.
+- Kategori.
+- Business Unit.
+- Pengguna.
+- Pengaturan.
+
+---
+
+## 6. Fitur di Luar MVP
+
+Fitur berikut **tidak termasuk** dalam versi pertama sistem, namun arsitekturnya harus dipersiapkan agar dapat ditambahkan di masa mendatang tanpa perubahan besar.
+
+Daftar fitur tersebut meliputi:
+
+- Multi Outlet.
+- Member / Loyalty.
+- Voucher & Promo.
+- Integrasi Printer Struk.
+- Integrasi Marketplace.
+- Integrasi Delivery Online.
+- Integrasi Akuntansi.
+- Multi Gudang.
+- Purchase Order.
+- Supplier Management.
+- Recipe Management.
+- Modifier Produk yang kompleks.
+
+Keputusan untuk menunda fitur-fitur tersebut bertujuan menjaga aplikasi tetap sederhana, cepat, dan mudah digunakan pada tahap awal implementasi.
